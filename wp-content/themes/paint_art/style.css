@@ -1,0 +1,104 @@
+/*
+Theme Name: Paint Art
+Author: Ruba Awata
+Description: Responsive theme for displaying art paintings
+Version: 1.0
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*********** Header **********/
+header {
+    background-color: #555;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    overflow: auto;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+    margin: auto;
+}
+
+.navbar li {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar li:hover {
+    background-color: #000;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li:first-child {
+    background-color: #04AA6D;
+    font-variation-settings: inherit;
+    font-variation-settings: initial;
+    font-variation-settings: revert;
+    font-variation-settings: revert-layer;
+    font-variation-settings: unset;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width: 500px) {
+    .navbar li {
+        float: none;
+        display: block;
+    }
+}
+
+/*************** Filters ****************/
+.categories-filter {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categories-filter li {
+    display: inline-block;
+  
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #04AA6D;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+}
+
+.categories-filter li:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.categories-filter li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*************** Footer ****************/
+footer {
+    padding: 1rem 0;
+}
+
+.first{
+    background-color: #04AA6D;
+    display: inline-block;
+}
